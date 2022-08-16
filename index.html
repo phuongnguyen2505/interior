@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Interior</title>
+
+		<link rel="icon" type="image/png" href="picture/logo1.png" />
+
+		<link rel="stylesheet" href="style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Prata&display=swap" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+			integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<header>
+			<div class="container flexbox">
+				<a href="index.html" class="logo">
+					<img src="picture/logo1.png" alt="" />
+				</a>
+				<div class="nav-menu">
+					<ul class="nav-list flexbox">
+						<li class="item-dark" id="home-nav"><a href="#home">home</a></li>
+						<li class="item-dark" id="project-nav"><a href="#project">project</a></li>
+						<li class="item-dark" id="designer-nav"><a href="#designer">designer</a></li>
+						<li class="item-dark" id="articles-nav"><a href="#articles">articles</a></li>
+					</ul>
+				</div>
+				<div class="btn-contact">
+					<a href="" class="">Contact</a>
+				</div>
+			</div>
+			<span class="line"></span>
+		</header>
+		<section id="home" class="top-home-page">
+			<div class="container flexbox">
+				<div class="title-top">
+					<p>We make</p>
+					<p>&emsp;every room</p>
+					<p>&emsp;a unique shape</p>
+					<div class="line-content">
+						<span class="line"></span>
+					</div>
+					<div class="content-top">
+						<p>
+							Lorem ipsum onsectetur adipiscing elit. Blandit mauris etiam faucibus laoreet tellus nam. Gravida solor
+							aenean orci, facilisis senectus.
+						</p>
+					</div>
+					<div class="img-top-small">
+						<img src="picture/banner-small.jpg" alt="" />
+					</div>
+				</div>
+				<div class="img-top">
+					<img src="picture/banner3.jpg" alt="" />
+				</div>
+			</div>
+		</section>
+
+		<section id="about-us" class="about-page">
+			<div class="container">
+				<div class="top-about flexbox">
+					<div class="title-about">
+						<p>Our remember-able stories</p>
+					</div>
+					<div class="content-about">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit mauris etiam faucibus laoreet vestibulum
+							pretium tellus nam. Gravida aenean orci, facilisis senectus.
+						</p>
+					</div>
+				</div>
+				<div class="bottom-about flexbox">
+					<div class="img-left">
+						<img src="picture/banner4.jpg" alt="" />
+					</div>
+					<div class="img-right">
+						<img src="picture/banner5.jpg" alt="" />
+						<div class="line-content-right">
+							<span class="line"></span>
+						</div>
+						<div class="content-right">
+							<p>We don’t renovate space, we transform them</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="line" class="container-line">
+			<div class="line-under-about">
+				<span class=""></span>
+			</div>
+		</section>
+		<section id="project" class="project-page">
+			<div class="container flexbox">
+				<div class="title-project">
+					<p>Our latest projects</p>
+				</div>
+				<div class="btn-all">
+					<a href="#">All-project</a>
+				</div>
+			</div>
+			<div class="slides-container">
+				<div class="slide">
+					<div class="my-slides fade">
+						<img src="picture/banner6.jpg" />
+						<div class="text">Caption Text</div>
+						<a href="">View Details</a>
+					</div>
+					<div class="my-slides fade">
+						<img
+							src="https://images.adsttc.com/media/images/61b2/41cb/1385/fc53/bc57/219d/slideshow/mplusm-house-saronida-erieta-attali-2013-29.jpg?1639072237"
+						/>
+						<div class="text">Caption Two</div>
+						<a href="">View Details</a>
+					</div>
+					<div class="my-slides fade">
+						<img
+							src="https://images.adsttc.com/media/images/61b2/41cb/1385/fc06/330d/2ccf/slideshow/mplusm-house-saronida-erieta-attali-2013-28.jpg?1639072238"
+						/>
+						<div class="text">Caption Three</div>
+						<a href="">View Details</a>
+					</div>
+					<div class="my-slides fade">
+						<img
+							src="https://images.adsttc.com/media/images/61b2/41cb/1385/fc06/330d/2ccf/slideshow/mplusm-house-saronida-erieta-attali-2013-28.jpg?1639072238"
+						/>
+						<div class="text">Caption Four</div>
+						<a href="">View Details</a>
+					</div>
+				</div>
+				<div class="group-dot flexbox">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+			</div>
+		</section>
+
+		<section id="designer" class="designer-page">
+			<div class="design-container flexbox">
+				<div class="container flexbox">
+					<div class="left-design">
+						<div class="title-design">
+							<p>Our designers</p>
+						</div>
+						<div class="content-design">
+							<p class="text1">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit mauris etiam faucibus laoreet
+								vestibulum
+							</p>
+							<p class="text2">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit mauris etiam faucibus laoreet
+								vestibulum nam. Gravida aenean orci, facilisis senectus.
+							</p>
+						</div>
+						<div class="btn-design">
+							<a href="">See All Designers</a>
+						</div>
+					</div>
+					<div class="banner-design">
+						<img src="picture/banner7.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="articles" class="articles-page">
+			<div class="container">
+				<div class="top-art">
+					<div class="title-art">
+						<p>Our latest articles</p>
+					</div>
+					<div class="btn-art">
+						<a href="">Read All Articles</a>
+					</div>
+				</div>
+				<div class="bottom-art flexbox">
+					<div class="left-art grid">
+						<div class="img-left-art">
+							<img src="picture/banner8.jpg" alt="" />
+						</div>
+						<p>Why your client needs interior design</p>
+						<span class="line-art"></span>
+						<div class="group-btn-art">
+							<a href="">Read More</a>
+							<span>August 16, 2022</span>
+						</div>
+					</div>
+					<div class="right-art grid">
+						<div class="img-right-art">
+							<img src="picture/banner9.jpg" alt="" />
+						</div>
+						<p>How to decore your home</p>
+						<span class="line-art"></span>
+						<div class="group-btn-art">
+							<a href="">Read More</a>
+							<span>August 16, 2022</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="btn-go-top grid">
+					<a href="" id="to-top">
+						<div class="arr-top">
+							<span class="arr-line1"></span>
+							<span class="arr-line2"></span>
+						</div>
+						<div class="arr-bottom">
+							<span class="arr-line3"></span>
+							<span class="arr-line4"></span>
+						</div>
+					</a>
+					<p>Go to the top</p>
+				</div>
+			</div>
+			<!-- <a href="" id="to-top">
+				<span class="ic" style="margin-right: 0">
+					<i class="fa fa-arrow-up" style="font-size: 17px"></i>
+				</span>
+			</a> -->
+		</footer>
+
+		<!-- <section style="height: 2000px"></section> -->
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			// function plusSlides(n) {
+			// 	showSlides((slideIndex += n));
+			// }
+
+			function currentSlide(n) {
+				showSlides((slideIndex = n));
+			}
+
+			function showSlides(n) {
+				let i;
+				let slides = document.getElementsByClassName('my-slides');
+				let dots = document.getElementsByClassName('dot');
+				if (n > slides.length) {
+					slideIndex = 1;
+				}
+				if (n < 1) {
+					slideIndex = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = 'none';
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(' active', '');
+				}
+				slides[slideIndex - 1].style.display = 'block';
+				dots[slideIndex - 1].className += ' active';
+			}
+		</script>
+
+		<script>
+			$(document).ready(function () {
+				$('.item-dark').click(function () {
+					$('.item-dark').removeClass('active-nav');
+					$(this).addClass('active-nav');
+				});
+			});
+		</script>
+
+		<script>
+			window.onscroll = function () {
+				console.log(window.pageYOffset);
+				var home = document.getElementById('home-nav');
+				var project = document.getElementById('project-nav');
+				var designer = document.getElementById('designer-nav');
+				var articles = document.getElementById('articles-nav');
+
+				if (window.pageYOffset < 2450) {
+					home.classList.add('active-nav');
+					project.classList.remove('active-nav');
+				} else if (window.pageYOffset > 2450 && window.pageYOffset < 3345) {
+					project.classList.add('active-nav');
+					home.classList.remove('active-nav');
+					designer.classList.remove('active-nav');
+				} else if (window.pageYOffset > 3345 && window.pageYOffset < 4207) {
+					project.classList.remove('active-nav');
+					designer.classList.add('active-nav');
+					articles.classList.remove('active-nav');
+				} else if (window.pageYOffset > 4207 && window.pageYOffset < 5400) {
+					designer.classList.remove('active-nav');
+					articles.classList.add('active-nav');
+				} else {
+					articles.classList.remove('active-nav');
+				}
+			};
+		</script>
+
+		<script>
+			var btn = $('#to-top');
+
+			btn.on('click', function (e) {
+				e.preventDefault();
+				$('html, body').animate({ scrollTop: 0 }, '300');
+			});
+		</script>
+	</body>
+</html>
