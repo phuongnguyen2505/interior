@@ -96,9 +96,6 @@ a {
 }
 
 .btn-contact a {
-	font-family: 'Prata';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 24px;
 	line-height: 30px;
 	color: #fff;
@@ -161,6 +158,19 @@ header span.line::after {
 	height: 823px;
 	background: #222120;
 }
+
+.title {
+	font-family: 'Prata';
+	font-style: normal;
+	font-weight: 400;
+}
+
+.content {
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 400;
+}
+
 .title-top {
 	position: relative;
 	width: 724px;
@@ -177,9 +187,6 @@ header span.line::after {
 }
 
 .title-top p {
-	font-family: 'Prata';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 82px;
 	line-height: 81px;
 
@@ -189,9 +196,6 @@ header span.line::after {
 }
 
 .title-top .content-top p {
-	font-family: 'DM Sans';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 20px;
 	line-height: 30px;
 
@@ -278,9 +282,6 @@ header span.line::after {
 }
 
 .title-about p {
-	font-family: 'Prata';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 70px;
 	line-height: 76px;
 
@@ -295,9 +296,6 @@ header span.line::after {
 }
 
 .content-about p {
-	font-family: 'DM Sans';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 24px;
 	line-height: 34px;
 
@@ -342,9 +340,6 @@ header span.line::after {
 }
 
 .content-right p {
-	font-family: 'Prata';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 52px;
 	line-height: 61px;
 
@@ -451,9 +446,6 @@ header span.line::after {
 }
 
 .title-project p {
-	font-family: 'Prata';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 70px;
 	line-height: 76px;
 
@@ -469,9 +461,6 @@ header span.line::after {
 }
 
 .btn-all a {
-	font-family: 'Prata';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 24px;
 	line-height: 30px;
 
@@ -497,9 +486,6 @@ header span.line::after {
 	width: 100%;
 	left: 168px;
 
-	font-family: 'Prata';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 24px;
 	line-height: 30px;
 	bottom: 55px;
@@ -602,9 +588,6 @@ header span.line::after {
 }
 
 .title-design p {
-	font-family: 'Prata';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 70px;
 	line-height: 76px;
 	color: #f8f3ed;
@@ -616,9 +599,6 @@ header span.line::after {
 }
 
 .content-design p {
-	font-family: 'DM Sans';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 24px;
 	line-height: 34px;
 	color: #f8f3ed;
@@ -639,9 +619,6 @@ header span.line::after {
 }
 
 .btn-design a {
-	font-family: 'Prata';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 24px;
 	line-height: 30px;
 
@@ -684,9 +661,6 @@ header span.line::after {
 }
 
 .title-art p {
-	font-family: 'Prata';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 70px;
 	line-height: 76px;
 
@@ -700,9 +674,6 @@ header span.line::after {
 }
 
 .btn-art a {
-	font-family: 'Prata';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 24px;
 	line-height: 30px;
 	color: #222120;
@@ -750,9 +721,6 @@ header span.line::after {
 }
 
 .left-art p {
-	font-family: 'Prata';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 30px;
 	line-height: 30px;
 
@@ -762,9 +730,6 @@ header span.line::after {
 }
 
 .right-art p {
-	font-family: 'Prata';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 30px;
 	line-height: 30px;
 
@@ -779,9 +744,6 @@ header span.line::after {
 }
 
 .group-btn-art a {
-	font-family: 'Prata';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.02em;
@@ -811,9 +773,7 @@ footer {
 
 .btn-go-top p {
 	position: relative;
-	font-family: 'Prata';
-	font-style: normal;
-	font-weight: 400;
+
 	font-size: 24px;
 	line-height: 32px;
 	top: 124px;
@@ -826,6 +786,7 @@ footer {
 	position: relative;
 	margin: auto;
 	top: 87px;
+	z-index: 5;
 }
 
 .arr-top {
@@ -876,4 +837,86 @@ footer {
 	display: block;
 	background: #fff;
 	border: 1px solid #fff;
+}
+
+.contact-us {
+	position: relative;
+	height: 403px;
+	width: 530px;
+	top: 228px;
+}
+
+.title-contact {
+	font-size: 30px;
+	line-height: 30px;
+
+	letter-spacing: -0.02em;
+
+	color: #f8f3ed;
+}
+
+.content-contact span {
+	font-size: 30px;
+	color: #f8f3ed;
+}
+
+.content-contact ul li:first-child {
+	position: relative;
+	font-size: 30px;
+	color: #f8f3ed;
+	list-style: disc;
+	left: 30px;
+	opacity: 1;
+}
+
+.content-contact ul li {
+	font-size: 60px;
+	color: #f8f3ed;
+	margin-top: 50px;
+	opacity: 0.6;
+}
+
+.img-ft {
+	position: relative;
+	width: 508px;
+	height: 659px;
+	left: 245px;
+	top: 50px;
+}
+
+.img-ft img {
+	width: 100%;
+	height: 100%;
+	border-radius: 254px 254px 0px 0px;
+}
+
+.policy-ft {
+	position: absolute;
+	width: 100%;
+	height: 61px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-bottom: 36px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo-ft img {
+	width: 97px;
+	height: 61px;
+}
+
+.copy-rights {
+	font-size: 24px;
+	color: #ffffff;
+
+	opacity: 0.4;
+}
+
+.copy-rights a {
+	font-size: 24px;
+	color: #ffffff;
+
+	opacity: 0.4;
 }
