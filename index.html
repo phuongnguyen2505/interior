@@ -8,7 +8,7 @@
 
 		<link rel="icon" type="image/png" href="picture/logo1.png" />
 
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="css/style.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Prata&display=swap" rel="stylesheet" />
 		<link
@@ -33,33 +33,67 @@
 						<li class="item-dark" id="articles-nav"><a href="#articles">articles</a></li>
 					</ul>
 				</div>
-				<div class="btn-contact title">
-					<a href="" class="">Contact</a>
+				<div class="btn-contact title flexbox">
+					<div class="btn-contact-mobile">
+						<a href="" class="">Contact</a>
+					</div>
+					<label for="nav-input" class="nav-mobile-btn">
+						<span></span>
+					</label>
 				</div>
+			</div>
+			<input type="checkbox" name="" class="nav-input" id="nav-input" hidden />
+			<label for="nav-input" class="overplay"></label>
+			<div class="nav-menu-mobile">
+				<label for="nav-input" class="close">
+					<i class="fa-solid fa-xmark"></i>
+				</label>
+				<ul class="nav-list-mobile">
+					<li class="item-mobile" id="home-nav">
+						<a href="#home"><i class="fa-solid fa-house"></i>&ensp;home</a>
+					</li>
+					<li class="item-mobile" id="project-nav">
+						<a href="#project"><i class="fa-solid fa-list-check"></i>&ensp;project</a>
+					</li>
+					<li class="item-mobile" id="designer-nav">
+						<a href="#designer"><i class="fa-brands fa-figma"></i>&ensp;designer</a>
+					</li>
+					<li class="item-mobile" id="articles-nav">
+						<a href="#articles"><i class="fa-solid fa-newspaper"></i>&ensp;articles</a>
+					</li>
+				</ul>
 			</div>
 			<span class="line"></span>
 		</header>
 		<section id="home" class="top-home-page">
-			<div class="container flexbox">
-				<div class="title-top title">
-					<p>We make</p>
-					<p>&emsp;every room</p>
-					<p>&emsp;a unique shape</p>
-					<div class="line-content">
-						<span class="line"></span>
+			<div class="container">
+				<div class="flexbox">
+					<div class="left-top">
+						<div class="title-top title">
+							<p>We make</p>
+							<p>every room</p>
+							<p>a unique shape</p>
+						</div>
+						<div class="line-content">
+							<span class="line"></span>
+						</div>
+						<div class="content-top content">
+							<p>
+								Lorem ipsum onsectetur adipiscing elit. Blandit mauris etiam faucibus laoreet tellus nam. Gravida solor
+								aenean orci, facilisis senectus.
+							</p>
+						</div>
 					</div>
-					<div class="content-top content">
-						<p>
-							Lorem ipsum onsectetur adipiscing elit. Blandit mauris etiam faucibus laoreet tellus nam. Gravida solor
-							aenean orci, facilisis senectus.
-						</p>
+					<div class="right-top">
+						<div class="img-top">
+							<img src="picture/banner3.jpg" alt="" />
+						</div>
 					</div>
+				</div>
+				<div id="add-class">
 					<div class="img-top-small">
 						<img src="picture/banner-small.jpg" alt="" />
 					</div>
-				</div>
-				<div class="img-top">
-					<img src="picture/banner3.jpg" alt="" />
 				</div>
 			</div>
 		</section>
@@ -111,28 +145,28 @@
 				<div class="slide">
 					<div class="my-slides fade">
 						<img src="picture/banner6.jpg" />
-						<div class="text">Caption Text</div>
+						<div class="text content">Caption Text</div>
 						<a href="" class="title">View Details</a>
 					</div>
 					<div class="my-slides fade">
 						<img
 							src="https://images.adsttc.com/media/images/61b2/41cb/1385/fc53/bc57/219d/slideshow/mplusm-house-saronida-erieta-attali-2013-29.jpg?1639072237"
 						/>
-						<div class="text">Caption Two</div>
+						<div class="text content">Caption Two</div>
 						<a href="">View Details</a>
 					</div>
 					<div class="my-slides fade">
 						<img
 							src="https://images.adsttc.com/media/images/61b2/41cb/1385/fc06/330d/2ccf/slideshow/mplusm-house-saronida-erieta-attali-2013-28.jpg?1639072238"
 						/>
-						<div class="text">Caption Three</div>
+						<div class="text content">Caption Three</div>
 						<a href="">View Details</a>
 					</div>
 					<div class="my-slides fade">
 						<img
 							src="https://images.adsttc.com/media/images/61b2/41cb/1385/fc06/330d/2ccf/slideshow/mplusm-house-saronida-erieta-attali-2013-28.jpg?1639072238"
 						/>
-						<div class="text">Caption Four</div>
+						<div class="text content">Caption Four</div>
 						<a href="">View Details</a>
 					</div>
 				</div>
@@ -262,6 +296,34 @@
 		<!-- <section style="height: 2000px"></section> -->
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="js/main.js" />
+		<script>
+			window.onscroll = function () {
+				console.log(window.pageYOffset);
+				var home = document.getElementById('home-nav');
+				var project = document.getElementById('project-nav');
+				var designer = document.getElementById('designer-nav');
+				var articles = document.getElementById('articles-nav');
+
+				if (window.pageYOffset < 2450) {
+					home.classList.add('active-nav');
+					project.classList.remove('active-nav');
+				} else if (window.pageYOffset > 2450 && window.pageYOffset < 3345) {
+					project.classList.add('active-nav');
+					home.classList.remove('active-nav');
+					designer.classList.remove('active-nav');
+				} else if (window.pageYOffset > 3345 && window.pageYOffset < 4207) {
+					project.classList.remove('active-nav');
+					designer.classList.add('active-nav');
+					articles.classList.remove('active-nav');
+				} else if (window.pageYOffset > 4207 && window.pageYOffset < 5400) {
+					designer.classList.remove('active-nav');
+					articles.classList.add('active-nav');
+				} else {
+					articles.classList.remove('active-nav');
+				}
+			};
+		</script>
 		<script>
 			let slideIndex = 1;
 			showSlides(slideIndex);
@@ -294,7 +356,14 @@
 				dots[slideIndex - 1].className += ' active';
 			}
 		</script>
+		<script>
+			var btn = $('#to-top');
 
+			btn.on('click', function (e) {
+				e.preventDefault();
+				$('html, body').animate({ scrollTop: 0 }, '300');
+			});
+		</script>
 		<script>
 			$(document).ready(function () {
 				$('.item-dark').click(function () {
@@ -303,41 +372,19 @@
 				});
 			});
 		</script>
-
 		<script>
-			window.onscroll = function () {
-				console.log(window.pageYOffset);
-				var home = document.getElementById('home-nav');
-				var project = document.getElementById('project-nav');
-				var designer = document.getElementById('designer-nav');
-				var articles = document.getElementById('articles-nav');
-
-				if (window.pageYOffset < 2450) {
-					home.classList.add('active-nav');
-					project.classList.remove('active-nav');
-				} else if (window.pageYOffset > 2450 && window.pageYOffset < 3345) {
-					project.classList.add('active-nav');
-					home.classList.remove('active-nav');
-					designer.classList.remove('active-nav');
-				} else if (window.pageYOffset > 3345 && window.pageYOffset < 4207) {
-					project.classList.remove('active-nav');
-					designer.classList.add('active-nav');
-					articles.classList.remove('active-nav');
-				} else if (window.pageYOffset > 4207 && window.pageYOffset < 5400) {
-					designer.classList.remove('active-nav');
-					articles.classList.add('active-nav');
-				} else {
-					articles.classList.remove('active-nav');
-				}
-			};
-		</script>
-
-		<script>
-			var btn = $('#to-top');
-
-			btn.on('click', function (e) {
-				e.preventDefault();
-				$('html, body').animate({ scrollTop: 0 }, '300');
+			jQuery(document).ready(function ($) {
+				var alterClass = function () {
+					var ww = document.body.clientWidth;
+					if (ww < 768) {
+						$('#add-class').addClass('top-small-res');
+					}
+				};
+				$(window).resize(function () {
+					alterClass();
+				});
+				//Fire it when the page first loads:
+				alterClass();
 			});
 		</script>
 	</body>
