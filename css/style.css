@@ -1011,6 +1011,10 @@ footer {
 	display: none;
 }
 
+.logo-ft-res {
+	display: none;
+}
+
 @media only screen and (max-width: 768px) {
 	.container {
 		max-width: 768px;
