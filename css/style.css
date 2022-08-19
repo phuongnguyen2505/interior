@@ -1015,9 +1015,19 @@ footer {
 	display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
+	html,
+	body {
+		overflow-x: hidden;
+	}
+
+	body {
+		width: 100%;
+	}
+
 	.container {
-		max-width: 768px;
+		width: 428px;
+		max-width: 600px;
 	}
 
 	.btn-contact a {
@@ -1293,7 +1303,13 @@ footer {
 	}
 
 	.btn-design {
-		margin-top: 40px;
+		width: 146px;
+		margin-top: 185px;
+	}
+
+	.content-design {
+		width: 377px;
+		height: 90px;
 	}
 
 	.content-design .text1,
@@ -1383,6 +1399,7 @@ footer {
 
 	.logo-ft-res {
 		position: relative;
+		display: block;
 		text-align: center;
 		top: 55px;
 	}
