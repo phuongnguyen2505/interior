@@ -1018,16 +1018,16 @@ footer {
 @media only screen and (max-width: 600px) {
 	html,
 	body {
-		overflow-x: hidden;
-	}
-
-	body {
 		width: 100%;
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
+		overflow-x: hidden;
+		scroll-behavior: smooth;
 	}
 
 	.container {
 		width: 428px;
-		max-width: 600px;
 	}
 
 	.btn-contact a {
@@ -1041,6 +1041,7 @@ footer {
 	}
 	.nav-mobile-btn {
 		display: block;
+		right: 15px;
 	}
 
 	.nav-menu-mobile {
