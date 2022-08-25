@@ -9,8 +9,14 @@
 		<link rel="icon" type="image/png" href="picture/logo1.png" />
 
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/loader.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Prata&display=swap" rel="stylesheet" />
+		<link
+			href="https://www.dafontfree.net/embed/cXdpZ2xleS1yb2ImZGF0YS8zMi9xLzEwNDgyL1F3aWdsZXkudHRm"
+			rel="stylesheet"
+			type="text/css"
+		/>
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -18,12 +24,27 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 	</head>
 	<body>
+		<div class="overlayy first"></div>
+		<div class="overlayy second">
+			<div class="dot-spinner">
+				<div class="dot-spinner__dot"></div>
+				<div class="dot-spinner__dot"></div>
+				<div class="dot-spinner__dot"></div>
+				<div class="dot-spinner__dot"></div>
+				<div class="dot-spinner__dot"></div>
+				<div class="dot-spinner__dot"></div>
+				<div class="dot-spinner__dot"></div>
+				<div class="dot-spinner__dot"></div>
+			</div>
+		</div>
+		<div class="overlayy third"></div>
 		<header>
-			<div class="container flexbox">
+			<div class="container header-inner flexbox">
 				<a href="index.html" class="logo">
-					<img src="picture/logo1.png" alt="" />
+					<span>Heling.</span>
 				</a>
 				<div class="nav-menu">
 					<ul class="nav-list flexbox">
@@ -35,7 +56,10 @@
 				</div>
 				<div class="btn-contact title flexbox">
 					<div class="btn-contact-mobile">
-						<a href="" class="">Contact</a>
+						<a href="" class="link-underline">
+							Contact
+							<span class="underline"></span>
+						</a>
 					</div>
 					<label for="nav-input" class="nav-mobile-btn">
 						<span></span>
@@ -43,7 +67,7 @@
 				</div>
 			</div>
 			<input type="checkbox" name="" class="nav-input" id="nav-input" hidden />
-			<label for="nav-input" class="overplay"></label>
+			<label for="nav-input" class="overlay"></label>
 			<div class="nav-menu-mobile">
 				<label for="nav-input" class="close">
 					<i class="fa-solid fa-xmark"></i>
@@ -70,9 +94,9 @@
 				<div class="flexbox">
 					<div class="left-top">
 						<div class="title-top title">
-							<p>We make</p>
-							<p>every room</p>
-							<p>a unique shape</p>
+							<h1><p class="hidetext">We make</p></h1>
+							<h2><p class="hidetext">every room</p></h2>
+							<h3><p class="hidetext">a unique shape</p></h3>
 						</div>
 						<div class="line-content">
 							<span class="line"></span>
@@ -138,7 +162,10 @@
 					<p>Our latest projects</p>
 				</div>
 				<div class="btn-all title">
-					<a href="#">All-project</a>
+					<a href="" data-text="Awesome" class="button">
+						<span class="actual-text">&nbsp;All&nbsp;project&nbsp;</span>
+						<span class="hover-text" aria-hidden="true">&nbsp;All&nbsp;project&nbsp;</span>
+					</a>
 				</div>
 			</div>
 			<div class="slides-container">
@@ -146,28 +173,40 @@
 					<div class="my-slides fade">
 						<img src="picture/banner6.jpg" />
 						<div class="text content">Caption Text</div>
-						<a href="" class="title">View Details</a>
+						<a href="" class="title link-underline">
+							View Details
+							<span class="underline"></span>
+						</a>
 					</div>
 					<div class="my-slides fade">
 						<img
 							src="https://images.adsttc.com/media/images/61b2/41cb/1385/fc53/bc57/219d/slideshow/mplusm-house-saronida-erieta-attali-2013-29.jpg?1639072237"
 						/>
 						<div class="text content">Caption Two</div>
-						<a href="">View Details</a>
+						<a href="" class="title link-underline">
+							View Details
+							<span class="underline"></span>
+						</a>
 					</div>
 					<div class="my-slides fade">
 						<img
 							src="https://images.adsttc.com/media/images/61b2/41cb/1385/fc06/330d/2ccf/slideshow/mplusm-house-saronida-erieta-attali-2013-28.jpg?1639072238"
 						/>
 						<div class="text content">Caption Three</div>
-						<a href="">View Details</a>
+						<a href="" class="title link-underline">
+							View Details
+							<span class="underline"></span>
+						</a>
 					</div>
 					<div class="my-slides fade">
 						<img
 							src="https://images.adsttc.com/media/images/61b2/41cb/1385/fc06/330d/2ccf/slideshow/mplusm-house-saronida-erieta-attali-2013-28.jpg?1639072238"
 						/>
 						<div class="text content">Caption Four</div>
-						<a href="">View Details</a>
+						<a href="" class="title link-underline">
+							View Details
+							<span class="underline"></span>
+						</a>
 					</div>
 				</div>
 				<div class="group-dot flexbox">
@@ -300,6 +339,9 @@
 		</footer>
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
